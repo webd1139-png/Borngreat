@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedinn Car Rental Service | Luxury Car Rental & Leasing Kumasi</title>
+    <meta name="description" content="Linkedinn Car Rental Service - Premium luxury car rental and leasing in Kumasi, Ghana. Open 24 hours. Experience excellence.">
+    <meta name="keywords" content="Linkedinn Car Rental, car rental Kumasi, car leasing Ghana, luxury car rental Accra, Eastern By-pass Airport Roundabout Kumasi">
+    <meta name="author" content="Linkedinn Car Rental Service">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Linkedinn Car Rental Service | Kumasi, Ghana">
+    <meta property="og:description" content="Car rental and leasing enquiries in Kumasi. Open 24 hours at Eastern By-pass, Airport Roundabout.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Manrope:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="premium.css">
+    <script src="premium.js" defer></script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Linkedinn Car Rental Service","description":"Car rental and leasing service in Kumasi, Ghana.","telephone":"+233242650673","address":{"@type":"PostalAddress","streetAddress":"Eastern By-pass, Airport Roundabout","addressLocality":"Kumasi","addressCountry":"GH"},"openingHours":"Mo-Su 00:00-23:59","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.3","reviewCount":"4"}}</script>
+</head>
+<body>
+    <div id="premium-root">
+        <div class="premium-app">
+            <nav class="premium-nav" id="premium-nav">
+                <div class="nav-inner">
+                    <a class="brand" href="#home" aria-label="Linkedinn Car Rental Service home">
+                        <span class="brand-monogram">L</span>
+                        <span class="brand-name">LINKEDINN<small>CAR RENTAL SERVICE</small></span>
+                    </a>
+                    <div class="premium-links" id="premium-links">
+                        <a href="#home">Home</a><a href="#fleet">Fleet</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+                        <a class="nav-cta" href="#booking">Book Now</a>
+                    </div>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation">☰</button>
+                </div>
+            </nav>
+
+            <header class="hero-premium" id="home">
+                <div class="hero-media"></div><div class="hero-line"></div>
+                <div class="hero-vehicle-stage" aria-hidden="true">
+                    <div class="stage-orbit orbit-one"></div>
+                    <div class="stage-orbit orbit-two"></div>
+                    <div class="stage-frame"><img src="assets/vehicles/hero.jpg" alt="Luxury sports vehicle" loading="eager" onerror="this.onerror=null;this.src='assets/vehicles/s-class.jpg'"></div>
+                </div>
+                <div class="hero-inner">
+                    <div class="availability">AVAILABLE 24 HOURS</div>
+                    <h1>Experience Luxury.<em>Drive Excellence.</em></h1>
+                    <p class="hero-copy">Discover a new standard of comfort, elegance and convenience with Linkedinn Car Rental Service. Your next journey begins with the right vehicle.</p>
+                    <div class="hero-actions">
+                        <a class="gold-btn" href="#fleet">Explore Our Fleet</a>
+                        <a class="outline-btn" href="#booking">Book Your Ride</a>
+                    </div>
+                    <div class="hero-meta">
+                        <div><strong>Kumasi, Ghana</strong>Eastern By-pass</div>
+                        <div><strong>24 / 7</strong>Always available</div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <section class="section-premium fleet-section" id="fleet">
+                    <div class="section-shell">
+                        <div class="fleet-head fade-ready">
+                            <div><span class="eyebrow">The Collection</span><h2 class="section-title">Curated Vehicles</h2></div>
+                            <div class="fleet-count" id="fleet-count">28 curated examples</div>
+                        </div>
+                        <div class="fleet-controls fade-ready">
+                            <input class="search-input" id="vehicle-search" type="search" placeholder="Search make or model">
+                            <select class="filter-select" id="brand-filter" aria-label="Filter by brand"><option>All</option><option>Toyota</option><option>Hyundai</option><option>Kia</option><option>Honda</option><option>Nissan</option><option>Mazda</option><option>Suzuki</option><option>Volkswagen</option><option>Ford</option><option>Chevrolet</option></select>
+                            <select class="filter-select" id="category-filter" aria-label="Filter by category"><option>All</option><option>Compact Sedan</option><option>Mid-size Sedan</option><option>Compact SUV</option><option>Mid-size SUV</option><option>Economy Hatchback</option></select>
+                            <select class="filter-select" id="seats-filter" aria-label="Filter by seats"><option value="All">All capacities</option><option value="4">4+ seats</option><option value="5">5+ seats</option><option value="7">7+ seats</option></select>
+                        </div>
+                        <div class="vehicle-grid" id="vehicle-grid"></div>
+                        <p class="inventory-note">Illustrative collection only: models shown have not been confirmed as available inventory. Rental prices and availability require direct confirmation.</p>
+                    </div>
+                </section>
+
+                <section class="section-premium" id="services">
+                    <div class="section-shell">
+                        <span class="eyebrow">At Your Service</span><h2 class="section-title">Professional rental solutions</h2>
+                        <p class="section-copy">Enquire directly for current availability and confirmed service arrangements.</p>
+                        <div class="services-grid fade-ready">
+                            <article class="service-card"><span class="service-number">01</span><h3>Luxury Vehicle Rentals</h3><p>Vehicle rental enquiries for executive travel, private journeys and special occasions.</p></article>
+                            <article class="service-card"><span class="service-number">02</span><h3>Personal Transportation</h3><p>Arrange dependable personal transport directly with the Linkedinn team.</p></article>
+                            <article class="service-card"><span class="service-number">03</span><h3>Corporate Rentals</h3><p>Discuss corporate travel and vehicle requirements for your organisation.</p></article>
+                            <article class="service-card"><span class="service-number">04</span><h3>Airport Transportation</h3><p>Enquire about airport transfers from the Eastern By-pass location in Kumasi.</p></article>
+                            <article class="service-card"><span class="service-number">05</span><h3>Vehicle Leasing</h3><p>Ask about car leasing options and terms for your individual or business needs.</p></article>
+                            <article class="service-card"><span class="service-number">06</span><h3>Tailored Enquiries</h3><p>Share your dates, destination and preferred vehicle for a direct service response.</p></article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-premium about-section" id="about">
+                    <div class="section-shell about-layout">
+                        <div class="about-image fade-ready" role="img" aria-label="Luxury automotive photography"></div>
+                        <div class="fade-ready">
+                            <span class="eyebrow">About Linkedinn</span><h2 class="section-title">A local standard of automotive service.</h2>
+                            <p class="section-copy">Linkedinn Car Rental Service provides car rental and leasing services in Kumasi, Ghana. Located around the Eastern By-pass, Airport Roundabout, the business serves customers looking for vehicle rental and leasing services.</p>
+                            <div class="facts"><div class="fact"><small>Location</small><strong>Eastern By-pass, Airport Roundabout</strong></div><div class="fact"><small>City</small><strong>Kumasi, Ghana</strong></div><div class="fact"><small>Phone</small><strong>024 265 0673</strong></div><div class="fact"><small>Availability</small><strong>Open 24 Hours</strong></div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-premium why-section">
+                    <div class="section-shell"><span class="eyebrow">Why Linkedinn</span><h2 class="section-title">Convenience, clarity and contact.</h2>
+                        <div class="why-grid fade-ready">
+                            <article class="why-card"><span>01</span><h3>Kumasi Location</h3><p>Conveniently situated around Eastern By-pass and Airport Roundabout.</p></article>
+                            <article class="why-card"><span>02</span><h3>Direct Enquiry</h3><p>Speak or write to the business using one verified telephone number.</p></article>
+                            <article class="why-card"><span>03</span><h3>24-Hour Listing</h3><p>The business is listed as open 24 hours for customer contact.</p></article>
+                            <article class="why-card"><span>04</span><h3>Easy Booking Request</h3><p>Prepare your rental details and continue the enquiry through WhatsApp.</p></article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-premium review-section">
+                    <div class="section-shell fade-ready"><span class="eyebrow">Google Business Profile</span><h2 class="section-title">Customer rating</h2><div class="rating-lockup"><strong>4.3</strong><span>★★★★★</span></div><p class="review-count">Based on 4 reviews</p></div>
+                </section>
+
+                <section class="section-premium booking-section" id="booking">
+                    <div class="section-shell booking-layout">
+                        <div class="booking-aside fade-ready"><span class="eyebrow">Reservation Enquiry</span><h2>Plan your journey.</h2><p>Share your requirements with Linkedinn. The team must confirm vehicle availability and all rental arrangements before a booking is confirmed.</p></div>
+                        <div class="fade-ready">
+                            <form class="booking-form" id="booking-form">
+                                <div class="field"><label for="customer-name">Full name *</label><input id="customer-name" name="name" required autocomplete="name"></div>
+                                <div class="field"><label for="customer-phone">Phone number *</label><input id="customer-phone" name="phone" required autocomplete="tel" placeholder="+233..."></div>
+                                <div class="field"><label for="customer-email">Email address</label><input id="customer-email" name="email" type="email" autocomplete="email"></div>
+                                <div class="field"><label for="preferred-vehicle">Preferred vehicle *</label><input id="preferred-vehicle" name="vehicle" required placeholder="Select or enter a model"></div>
+                                <div class="field"><label for="pickup-date">Pickup date *</label><input id="pickup-date" name="pickup" type="date" required></div>
+                                <div class="field"><label for="return-date">Return date *</label><input id="return-date" name="return" type="date" required></div>
+                                <div class="field"><label for="pickup-location">Pickup location *</label><input id="pickup-location" name="location" required value="Eastern By-pass, Airport Roundabout, Kumasi"></div>
+                                <div class="field"><label for="destination">Destination</label><input id="destination" name="destination"></div>
+                                <div class="field full"><label for="booking-message">Additional message</label><textarea id="booking-message" name="message" placeholder="Dates, passenger count or special requirements"></textarea></div>
+                                <p class="field full form-error" id="booking-error" role="alert"></p>
+                                <button class="gold-btn" type="submit">Prepare WhatsApp Enquiry</button>
+                            </form>
+                            <div class="booking-confirmation" id="booking-confirmation"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-premium contact-section" id="contact">
+                    <div class="section-shell contact-layout">
+                        <div class="fade-ready"><span class="eyebrow">Contact</span><h2 class="section-title">Visit or contact the team.</h2>
+                            <div class="contact-list"><div class="contact-row"><small>Address</small><strong>Eastern By-pass, Airport Roundabout, Kumasi, Ghana</strong></div><div class="contact-row"><small>Telephone</small><a href="tel:+233242650673">024 265 0673</a></div><div class="contact-row"><small>Availability</small><strong>Open 24 Hours</strong></div></div>
+                            <div class="contact-actions"><a href="tel:+233242650673">Call Now</a><a href="https://wa.me/233242650673" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.google.com/maps/search/?api=1&query=Eastern+By-pass+Airport+Roundabout+Kumasi+Ghana" target="_blank" rel="noopener">Get Directions</a></div>
+                        </div>
+                        <div class="map fade-ready"><iframe title="Map of Eastern By-pass, Airport Roundabout, Kumasi" loading="lazy" src="https://www.google.com/maps?q=Eastern+By-pass+Airport+Roundabout+Kumasi+Ghana&output=embed"></iframe></div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer-premium">
+                <div class="section-shell"><div class="footer-grid"><div><a class="brand" href="#home"><span class="brand-monogram">L</span><span class="brand-name">LINKEDINN<small>CAR RENTAL SERVICE</small></span></a><p class="footer-copy">Car rental and leasing services in Kumasi, Ghana. Your journey, comfort and convenience remain central to every enquiry.</p></div><div><div class="footer-title">Explore</div><div class="footer-links"><a href="#fleet">Vehicle Collection</a><a href="#services">Services</a><a href="#about">About Us</a></div></div><div><div class="footer-title">Contact</div><div class="footer-links"><a href="tel:+233242650673">024 265 0673</a><a href="https://wa.me/233242650673">WhatsApp</a><a href="#contact">Airport Roundabout, Kumasi</a></div></div></div><div class="footer-bottom"><span>© 2026 Linkedinn Car Rental Service</span><span>Your Journey. Your Comfort. Our Priority.</span></div></div>
+            </footer>
+
+            <div class="modal" id="vehicle-modal" role="dialog" aria-modal="true" aria-label="Vehicle details"><button class="modal-close" id="modal-close" aria-label="Close">×</button><div class="modal-panel"><div class="modal-image"><img id="modal-image" alt=""></div><div class="modal-info"><span class="vehicle-brand" id="modal-brand"></span><h2 id="modal-name"></h2><div class="modal-specs"><div id="modal-seats"></div><div id="modal-transmission"></div><div id="modal-fuel"></div><div>Price: Confirm directly</div></div><p id="modal-description"></p><button class="gold-btn" id="modal-book">Enquire About This Vehicle</button></div></div></div>
+
+            <a class="floating-whatsapp" href="https://wa.me/233242650673?text=Hello%20Linkedinn%20Car%20Rental%20Service" target="_blank" rel="noopener" aria-label="Chat with Linkedinn on WhatsApp">
+                <span class="wa-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.52 3.48A11.9 11.9 0 0 0 12.05 0C5.45 0 .08 5.37.08 11.98c0 2.11.55 4.17 1.6 5.99L0 24l6.18-1.62a11.98 11.98 0 0 0 5.87 1.5h.01c6.59 0 11.97-5.37 11.97-11.98 0-3.2-1.24-6.21-3.51-8.42Zm-8.47 18.4h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.67.96.98-3.58-.24-.37a9.86 9.86 0 0 1-1.52-5.32c0-5.44 4.43-9.87 9.88-9.87 2.64 0 5.12 1.03 6.99 2.9a9.81 9.81 0 0 1 2.9 7c0 5.44-4.43 9.87-9.88 9.87Zm5.42-7.39c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35Z"/></svg></span><span class="wa-label">WhatsApp</span>
+            </a>
+
+            <aside class="concierge" id="concierge" aria-label="Linkedinn website concierge">
+                <button class="concierge-launcher" id="concierge-launcher" aria-expanded="false" aria-controls="concierge-panel">
+                    <span class="concierge-avatar">L</span><span class="concierge-status"><strong>Linkedinn Concierge</strong><small>Online · Website assistant</small></span>
+                </button>
+                <div class="concierge-panel" id="concierge-panel">
+                    <div class="concierge-head"><div><span>Linkedinn</span><strong>Digital Concierge</strong></div><button id="concierge-close" aria-label="Close concierge">×</button></div>
+                    <div class="concierge-messages" id="concierge-messages" aria-live="polite">
+                        <div class="chat-message assistant">Welcome to Linkedinn Car Rental Service. I can guide you through the fleet, services, location, or booking enquiry process.</div>
+                    </div>
+                    <div class="chat-suggestions" id="chat-suggestions">
+                        <button data-question="fleet">Explore the fleet</button><button data-question="location">Business location</button><button data-question="booking">How to book</button>
+                    </div>
+                    <form class="chat-composer" id="chat-form"><input id="chat-input" autocomplete="off" placeholder="Ask about Linkedinn…" aria-label="Your message"><button type="submit" aria-label="Send message">→</button></form>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
