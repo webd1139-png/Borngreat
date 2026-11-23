@@ -37,23 +37,30 @@
             </nav>
 
             <header class="hero-premium" id="home">
-                <div class="hero-media"></div><div class="hero-line"></div>
-                <div class="hero-vehicle-stage" aria-hidden="true">
-                    <div class="stage-orbit orbit-one"></div>
-                    <div class="stage-orbit orbit-two"></div>
+                
+                
+                    
+                    
                     <div class="stage-frame"><img src="assets/vehicles/hero.jpg" alt="Luxury sports vehicle" loading="eager" onerror="this.onerror=null;this.src='assets/vehicles/s-class.jpg'"></div>
                 </div>
                 <div class="hero-inner">
-                    <div class="availability">AVAILABLE 24 HOURS</div>
-                    <h1>Experience Luxury.<em>Drive Excellence.</em></h1>
-                    <p class="hero-copy">Discover a new standard of comfort, elegance and convenience with Linkedinn Car Rental Service. Your next journey begins with the right vehicle.</p>
-                    <div class="hero-actions">
-                        <a class="gold-btn" href="#fleet">Explore Our Fleet</a>
-                        <a class="outline-btn" href="#booking">Book Your Ride</a>
+                    <div class="hero-bg"></div>
+                <div class="hero-overlay"></div>
+                    <h1>Reliable Car Rental in Kumasi. Open 24 Hours.</h1>
+                    <p class="hero-subtitle">We provide dependable car rental services at Eastern By-pass, Airport Roundabout. Open around the clock for your convenience.</p>
+                    <div class="hero-badge">
+                        <span><i class="fas fa-map-marker-alt"></i> Airport Roundabout pickup</span>
+                        <span><i class="fas fa-clock"></i> 24/7 support</span>
+                        <span><i class="fab fa-whatsapp"></i> WhatsApp booking in minutes</span>
                     </div>
-                    <div class="hero-meta">
-                        <div><strong>Kumasi, Ghana</strong>Eastern By-pass</div>
-                        <div><strong>24 / 7</strong>Always available</div>
+                    <div class="hero-cta">
+                        <a class="btn-primary" href="#fleet">View Our Fleet</a>
+                        <a class="btn-ghost" href="#booking">Get a Quote</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item"><div class="stat-number">24</div><div class="stat-label">Hours Open</div></div>
+                        <div class="stat-item"><div class="stat-number">4.3</div><div class="stat-label">Google Rating</div></div>
+                        <div class="stat-item"><div class="stat-number">+233 24 265 0673</div><div class="stat-label">Contact</div></div>
                     </div>
                 </div>
             </header>
@@ -127,6 +134,23 @@
                                 <div class="field"><label for="customer-email">Email address</label><input id="customer-email" name="email" type="email" autocomplete="email"></div>
                                 <div class="field"><label for="preferred-vehicle">Preferred vehicle *</label><input id="preferred-vehicle" name="vehicle" required placeholder="Select or enter a model"></div>
                                 <div class="field"><label for="pickup-date">Pickup date *</label><input id="pickup-date" name="pickup" type="date" required></div>
+                                <div class="field"><label for="pickup-time">Pickup time *</label>
+                                    <select id="pickup-time" name="pickupTime" required>
+                                        <option value="" disabled selected>Select pickup time</option>
+                                        <option value="08:00">08:00 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="14:00">02:00 PM</option>
+                                        <option value="16:00">04:00 PM</option>
+                                        <option value="18:00">06:00 PM</option>
+                                    </select>
+                                </div>
+                                <div class="field"><label>Rental type *</label>
+                                    <div class="radio-group">
+                                        <label><input type="radio" name="rentalType" value="self-drive" required> Self-drive</label>
+                                        <label><input type="radio" name="rentalType" value="with-driver" checked> With driver</label>
+                                    </div>
+                                </div>
                                 <div class="field"><label for="return-date">Return date *</label><input id="return-date" name="return" type="date" required></div>
                                 <div class="field"><label for="pickup-location">Pickup location *</label><input id="pickup-location" name="location" required value="Eastern By-pass, Airport Roundabout, Kumasi"></div>
                                 <div class="field"><label for="destination">Destination</label><input id="destination" name="destination"></div>
@@ -139,7 +163,81 @@
                     </div>
                 </section>
 
-                <section class="section-premium contact-section" id="contact">
+                <!-- FAQ Section -->
+<section class="faq-section" id="faq">
+    <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-accordion">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What documents are required to rent a car?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>A valid driver's licence, national or international, and a means of identification (national ID, passport, or voter's card). Minimum age is 21 years with at least 2 years of driving experience.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is a deposit required?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, a refundable deposit is required. The amount varies by vehicle category and will be confirmed during the booking enquiry. The deposit is refunded upon safe return of the vehicle.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is the fuel policy?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Rentals are provided with a full tank of fuel. The vehicle should be returned with a full tank. If returned empty, a refuelling charge plus service fee will apply.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Self-drive or with a driver?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Both options are available. Self-drive rentals are ideal for experienced drivers who want independence. With-driver options include a professional driver and are recommended for visitors or those who prefer not to drive.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Airport pickup available?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We offer airport pickup at Kotoka International Airport (Accra) and any other Ghanaian airport. The meeting point is the Airport Roundabout in Kumasi for local pickups. Please provide your flight details during enquiry.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Payment options - MoMo, cash?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>We accept Mobile Money (MoMo), bank transfer, and cash payments. Full payment or deposit terms are confirmed during the booking enquiry.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What happens if I return the car late?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>A grace period of 30 minutes is provided. After 30 minutes, a late fee applies (typically 20% of the daily rate per hour). Please contact us immediately if you expect to be late.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-premium contact-section" id="contact">
                     <div class="section-shell contact-layout">
                         <div class="fade-ready"><span class="eyebrow">Contact</span><h2 class="section-title">Visit or contact the team.</h2>
                             <div class="contact-list"><div class="contact-row"><small>Address</small><strong>Eastern By-pass, Airport Roundabout, Kumasi, Ghana</strong></div><div class="contact-row"><small>Telephone</small><a href="tel:+233242650673">024 265 0673</a></div><div class="contact-row"><small>Availability</small><strong>Open 24 Hours</strong></div></div>

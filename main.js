@@ -62,7 +62,8 @@ const reviews = [
     { name: 'Kofi Mensah', rating: 4, text: 'Great cars and fair pricing. Easy pickup at Airport Roundabout.', time: '6 months ago' }];
 
 // --- Render Fleet ---
-const carGrid = document.getElementById('car-grid');
+// Renders cars from main.js dataset to the vehicle-grid in the fleet section
+const carGrid = document.getElementById('vehicle-grid');
 function renderCars(filter = 'all') {
     carGrid.innerHTML = '';
     const filtered = filter === 'all' ? cars : cars.filter(c => c.category === filter);
