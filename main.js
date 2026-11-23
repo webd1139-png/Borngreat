@@ -169,7 +169,7 @@ document.getElementById('quick-book').addEventListener('submit', (e) => {
     const date = fd.get('date');
     const category = fd.get('category');
     const duration = fd.get('duration');
-    alert('Quote request received!\n\nPickup Location: ' + pickup + '\nDate: ' + date + '\nCar Category: ' + category + '\nDuration: ' + duration + ' day(s)\n\nWe will contact you shortly with pricing.\n\nContact: WhatsApp +233 24 608 6365 or Call +233 59 905 5809');
+    alert('Quote request received!\n\nPickup Location: ' + pickup + '\nDate: ' + date + '\nCar Category: ' + category + '\nDuration: ' + duration + ' day(s)\n\nWe will contact you shortly with pricing.\n\nContact: WhatsApp +233 24 265 0673 or Call +233 24 265 0673');
 });
 document.getElementById('contact-form').addEventListener('submit', (e) => {
     e.preventDefault();

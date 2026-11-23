@@ -1,5 +1,6 @@
 let vehicleExamples=[];
 const grid=document.getElementById('vehicle-grid');
+const FLEET_FALLBACK_IMAGE='assets/vehicles/hero.jpg';
 
 async function loadVehicleFleet(){
   try{
@@ -7,7 +8,16 @@ async function loadVehicleFleet(){
     if(!response.ok)throw new Error(`Fleet data unavailable (${response.status})`);
     const data=await response.json();
     vehicleExamples=Array.isArray(data.fleet)?data.fleet:[];
-  }catch(error){console.error(error);vehicleExamples=[]}
+  }catch(error){
+    console.error(error);
+    vehicleExamples=[];
+    if(grid){
+      grid.innerHTML='<p class="fleet-error" role="status">The vehicle list could not be loaded. Please refresh the page or contact us on 024 265 0673.</p>';
+    }
+    const count=document.getElementById('fleet-count');
+    if(count)count.textContent='Fleet unavailable';
+    return;
+  }
   renderVehicles();
 }
 
@@ -17,24 +27,48 @@ function renderVehicles(){
   const category=document.getElementById('category-filter')?.value||'All';
   const seats=document.getElementById('seats-filter')?.value||'All';
   const query=document.getElementById('vehicle-search')?.value.trim().toLowerCase()||'';
-  const cars=vehicleExamples.filter(vehicle=>(brand==='All'||vehicle.brand===brand)&&(category==='All'||vehicle.category===category)&&(seats==='All'||vehicle.seats>=Number(seats))&&`${vehicle.brand} ${vehicle.name} ${vehicle.best_use.join(' ')}`.toLowerCase().includes(query));
-  grid.innerHTML=cars.map(vehicle=>`<article class="vehicle-card fade-ready"><div class="vehicle-image"><img loading="lazy" src="${vehicle.image}" alt="${vehicle.alt}" onerror="this.onerror=null;this.src='assets/vehicles/hero.jpg';">${vehicle.most_rented?'<span class="vehicle-status most-rented">Most Rented</span>':''}</div><div class="vehicle-body"><span class="vehicle-brand">${vehicle.brand}</span><h3>${vehicle.name}</h3><div class="vehicle-price">From ${vehicle.typical_daily_price_range_ghs}</div><div class="spec-row"><span>${vehicle.seats} seats</span><span>${vehicle.transmission}</span><span>${vehicle.fuel}</span></div><p class="vehicle-use">Best for: ${vehicle.best_use.join(', ')}</p><div class="vehicle-actions"><button type="button" onclick="openVehicle(${vehicle.id})">View details</button><button type="button" class="book-small" onclick="openVehicleWhatsApp('${vehicle.brand} ${vehicle.name}')">WhatsApp Enquiry</button></div></div></article>`).join('');
-  document.getElementById('fleet-count').textContent=`${cars.length} vehicle${cars.length===1?'':''}`;
+  const cars=vehicleExamples.filter(vehicle=>{
+    const use=Array.isArray(vehicle.best_use)?vehicle.best_use:[];
+    const matchesBrand=brand==='All'||vehicle.brand===brand;
+    const matchesCategory=category==='All'||vehicle.category===category;
+    const matchesSeats=seats==='All'||Number(vehicle.seats)>=Number(seats);
+    const haystack=`${vehicle.brand||''} ${vehicle.name||''} ${use.join(' ')}`.toLowerCase();
+    return matchesBrand&&matchesCategory&&matchesSeats&&haystack.includes(query);
+  });
+
+  if(!cars.length){
+    grid.innerHTML='<p class="fleet-empty" role="status">No vehicles match your filters. Try clearing the search or filters.</p>';
+  }else{
+    grid.innerHTML=cars.map(vehicle=>{
+      const use=Array.isArray(vehicle.best_use)?vehicle.best_use:[];
+      const safeImage=vehicle.image||FLEET_FALLBACK_IMAGE;
+      const safeAlt=vehicle.alt||`${vehicle.brand||''} ${vehicle.name||''} rental vehicle`;
+      const price=vehicle.typical_daily_price_range_ghs||'Price: confirm with owner';
+      const fullName=(vehicle.brand+' '+vehicle.name).replace(/'/g,"\\'");
+      return `<article class="vehicle-card fade-ready"><div class="vehicle-image"><img loading="lazy" decoding="async" src="${safeImage}" alt="${safeAlt}" onerror="this.onerror=null;this.src='${FLEET_FALLBACK_IMAGE}';">${vehicle.most_rented?'<span class="vehicle-status most-rented">Most Rented</span>':''}</div><div class="vehicle-body"><span class="vehicle-brand">${vehicle.brand||''}</span><h3>${vehicle.name||''}</h3><div class="vehicle-price">${price}</div><div class="spec-row"><span>${vehicle.seats||''} seats</span><span>${vehicle.transmission||''}</span><span>${vehicle.fuel||''}</span></div><p class="vehicle-use">Best for: ${use.join(', ')}</p><div class="vehicle-actions"><button type="button" onclick="openVehicle(${vehicle.id})">View details</button><button type="button" class="book-small" onclick="openVehicleWhatsApp('${fullName}')">WhatsApp Enquiry</button></div></div></article>`;
+    }).join('');
+  }
+  const count=document.getElementById('fleet-count');
+  if(count)count.textContent=`${cars.length} vehicle${cars.length===1?'':'s'}`;
   observeFades();
 }
 
 function openVehicle(id){
   const vehicle=vehicleExamples.find(item=>item.id===id);
   if(!vehicle)return;
-  document.getElementById('modal-image').src=vehicle.image;
-  document.getElementById('modal-image').alt=vehicle.alt;
+  const modalImage=document.getElementById('modal-image');
+  modalImage.src=vehicle.image||FLEET_FALLBACK_IMAGE;
+  modalImage.alt=vehicle.alt||`${vehicle.brand} ${vehicle.name}`;
+  modalImage.onerror=function(){this.onerror=null;this.src=FLEET_FALLBACK_IMAGE;};
   document.getElementById('modal-brand').textContent=vehicle.brand;
   document.getElementById('modal-name').textContent=vehicle.name;
   document.getElementById('modal-seats').textContent=`Passengers: ${vehicle.seats}`;
   document.getElementById('modal-transmission').textContent=`Transmission: ${vehicle.transmission}`;
   document.getElementById('modal-fuel').textContent=`Fuel: ${vehicle.fuel}`;
-  document.querySelector('#vehicle-modal .modal-specs div:last-child').textContent=`Price: ${vehicle.typical_daily_price_range_ghs}`;
-  document.getElementById('modal-description').textContent=`Best suited for ${vehicle.best_use.join(', ')}. Availability, exact specification and final rental terms must be confirmed with Linkedinn before booking.`;
+  const priceSlot=document.querySelector('#vehicle-modal .modal-specs div:last-child');
+  if(priceSlot)priceSlot.textContent=`Price: ${vehicle.typical_daily_price_range_ghs||'confirm with owner'}`;
+  const use=Array.isArray(vehicle.best_use)?vehicle.best_use:[];
+  document.getElementById('modal-description').textContent=`Best suited for ${use.join(', ')||'general rental'}. Availability, exact specification and final rental terms must be confirmed with Linkedinn before booking.`;
   document.getElementById('vehicle-modal').classList.add('open');
   document.getElementById('modal-book').onclick=()=>openVehicleWhatsApp(`${vehicle.brand} ${vehicle.name}`);
 }
@@ -65,6 +99,21 @@ function observeFades(){
   const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')}),{threshold:.12});
   document.querySelectorAll('.fade-ready').forEach(element=>observer.observe(element));
 }
+
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(question=>{
+  question.setAttribute('role','button');
+  question.setAttribute('tabindex','0');
+  question.setAttribute('aria-expanded','false');
+  const toggle=()=>{
+    const item=question.closest('.faq-item');
+    if(!item)return;
+    const isOpen=item.classList.toggle('open');
+    question.setAttribute('aria-expanded',String(isOpen));
+  };
+  question.addEventListener('click',toggle);
+  question.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();toggle();}});
+});
 
 const booking=document.getElementById('booking-form');
 booking?.addEventListener('submit',event=>{
@@ -117,12 +166,12 @@ function conciergeAnswer(question){
   if(/phone|call|number|contact/.test(q))return'Call 024 265 0673 or use +233 24 265 0673.';
   if(/hour|open|available|24/.test(q))return'Linkedinn is listed as open 24 hours.';
   if(/price|cost|rent|lease|rate/.test(q))return'Fleet prices are estimates and must be confirmed directly with Linkedinn.';
-  if(/fleet|car|vehicle|suv|sedan|model/.test(q))return'The fleet has 20 proposed vehicle options with brand, category and seat filters.';
+  if(/fleet|car|vehicle|suv|sedan|model/.test(q))return'Our fleet has 10 popular rental vehicles — Toyota, Hyundai and Kia — with brand, category and seat filters. Prices are estimates and must be confirmed with Linkedinn.';
   if(/book|booking|reserve|hire/.test(q))return'Complete the enquiry form and continue through WhatsApp. Linkedinn must confirm availability and final arrangements.';
   if(/service/.test(q))return'Linkedinn offers airport transportation, corporate rentals, personal transport and vehicle leasing.';
   if(/about|company|business/.test(q))return'Linkedinn Car Rental Service provides car rental and leasing around Airport Roundabout, Kumasi.';
   if(/whatsapp/.test(q))return'WhatsApp the team directly at +233 24 265 0673.';
-  if(/rating|review/.test(q))return'Linkedinn has a 4.3 Google Business Profile rating based on 4 reviews.';
+  if(/rating|review/.test(q))return'Linkedinn has a 4.3 Google Business Profile rating.';
   return'I can help with the fleet, location, contact details, availability, services or reviews.';
 }
 function askConcierge(question){addChatMessage(question,'user');setTimeout(()=>addChatMessage(conciergeAnswer(question)),420)}

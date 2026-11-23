@@ -4,266 +4,64 @@
       "id": 1,
       "brand": "Toyota",
       "name": "Corolla",
-      "image": "assets/vehicles/sedan-blue.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
+      "image": "assets/vehicles/corolla.jpg",
+      "image_source": "Wikimedia Commons — 'Toyota Corolla (E210) sedan IMG 4189' by Alexander Migl, CC BY-SA 4.0 (resized)",
       "category": "economy",
       "seats": 5,
       "transmission": "Automatic",
       "fuel": "Petrol",
       "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "airport",
-        "everyday",
-        "city"
-      ],
+      "best_use": ["airport", "everyday", "city"],
       "most_rented": true,
-      "alt": "Toyota Corolla sedan suitable for airport and everyday travel"
+      "alt": "Toyota Corolla sedan — a popular everyday rental in Kumasi"
     },
     {
       "id": 2,
-      "brand": "Hyundai",
-      "name": "Accent",
-      "image": "assets/vehicles/hyundai.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "economy",
+      "brand": "Toyota",
+      "name": "Camry",
+      "image": "assets/vehicles/camry.jpg",
+      "image_source": "Wikimedia Commons — '2010 Toyota Camry' by IFCAR, released into the public domain (resized)",
+      "category": "sedan",
       "seats": 5,
       "transmission": "Automatic",
       "fuel": "Petrol",
       "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "city",
-        "airport"
-      ],
+      "best_use": ["airport", "corporate", "everyday"],
       "most_rented": true,
-      "alt": "Hyundai Accent compact sedan for city travel"
+      "alt": "Toyota Camry sedan — popular for airport and corporate use in Kumasi"
     },
     {
       "id": 3,
-      "brand": "Kia",
-      "name": "Rio",
-      "image": "assets/vehicles/hatch-red.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "economy",
+      "brand": "Toyota",
+      "name": "RAV4",
+      "image": "assets/vehicles/rav4.jpg",
+      "image_source": "Wikimedia Commons — 'Toyota RAV4 (2015-2018)' by PageOrganizer, CC BY-SA 4.0 (resized)",
+      "category": "suv",
       "seats": 5,
       "transmission": "Automatic",
       "fuel": "Petrol",
       "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "city",
-        "airport"
-      ],
+      "best_use": ["family", "trips", "airport"],
       "most_rented": true,
-      "alt": "Kia Rio hatchback for compact city use"
+      "alt": "Toyota RAV4 SUV — a favourite for family and intercity trips in Ghana"
     },
     {
       "id": 4,
       "brand": "Toyota",
-      "name": "Yaris",
-      "image": "assets/vehicles/city-car.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "economy",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "city",
-        "everyday"
-      ],
-      "most_rented": false,
-      "alt": "Toyota Yaris compact hatchback for economical travel"
-    },
-    {
-      "id": 5,
-      "brand": "Toyota",
-      "name": "Camry",
-      "image": "assets/vehicles/sedan-gray.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "sedan",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "airport",
-        "corporate",
-        "everyday"
-      ],
-      "most_rented": true,
-      "alt": "Toyota Camry sedan for airport and corporate journeys"
-    },
-    {
-      "id": 6,
-      "brand": "Toyota",
-      "name": "Corolla Cross",
-      "image": "assets/vehicles/family-suv.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "suv",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "family",
-        "trips",
-        "airport"
-      ],
-      "most_rented": false,
-      "alt": "Toyota Corolla Cross compact SUV for family travel"
-    },
-    {
-      "id": 7,
-      "brand": "Hyundai",
-      "name": "Elantra",
-      "image": "assets/vehicles/economy-car.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "sedan",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "everyday",
-        "airport",
-        "corporate"
-      ],
-      "most_rented": false,
-      "alt": "Hyundai Elantra sedan for everyday and airport travel"
-    },
-    {
-      "id": 8,
-      "brand": "Honda",
-      "name": "Civic",
-      "image": "assets/vehicles/sedan-gray.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "sedan",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "airport",
-        "corporate",
-        "everyday"
-      ],
-      "most_rented": false,
-      "alt": "Honda Civic sedan for business and leisure journeys"
-    },
-    {
-      "id": 9,
-      "brand": "Nissan",
-      "name": "Sentra",
-      "image": "assets/vehicles/sedan-blue.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "sedan",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "everyday",
-        "airport"
-      ],
-      "most_rented": false,
-      "alt": "Nissan Sentra sedan for comfortable city travel"
-    },
-    {
-      "id": 10,
-      "brand": "Toyota",
-      "name": "RAV4",
-      "image": "assets/vehicles/family-suv.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "suv",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "family",
-        "trips",
-        "airport"
-      ],
-      "most_rented": true,
-      "alt": "Toyota RAV4 SUV for family and intercity trips"
-    },
-    {
-      "id": 11,
-      "brand": "Hyundai",
-      "name": "Tucson",
-      "image": "assets/vehicles/suv-white.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "suv",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "family",
-        "trips",
-        "airport"
-      ],
-      "most_rented": false,
-      "alt": "Hyundai Tucson SUV for family journeys"
-    },
-    {
-      "id": 12,
-      "brand": "Kia",
-      "name": "Sportage",
-      "image": "assets/vehicles/suv-white.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "suv",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "family",
-        "trips",
-        "corporate"
-      ],
-      "most_rented": false,
-      "alt": "Kia Sportage SUV for family and corporate travel"
-    },
-    {
-      "id": 13,
-      "brand": "Honda",
-      "name": "CR-V",
-      "image": "assets/vehicles/family-suv.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "suv",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "family",
-        "trips",
-        "corporate"
-      ],
-      "most_rented": false,
-      "alt": "Honda CR-V SUV for family and long-distance trips"
-    },
-    {
-      "id": 14,
-      "brand": "Toyota",
       "name": "Highlander",
-      "image": "assets/vehicles/family-suv.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
+      "image": "assets/vehicles/highlander.jpg",
+      "image_source": "Wikimedia Commons — '2011-2013 Toyota Highlander' by MercurySable99, CC BY-SA 4.0 (resized)",
       "category": "suv",
       "seats": 7,
       "transmission": "Automatic",
       "fuel": "Petrol",
       "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "family",
-        "tours",
-        "airport"
-      ],
+      "best_use": ["family", "tours", "airport"],
       "most_rented": false,
-      "alt": "Toyota Highlander 7-seat SUV for family and tour travel"
+      "alt": "Toyota Highlander 7-seat SUV for family and tour travel in Kumasi"
     },
     {
-      "id": 15,
+      "id": 5,
       "brand": "Toyota",
       "name": "Land Cruiser Prado",
       "image": "assets/vehicles/prado.jpg",
@@ -273,109 +71,84 @@
       "transmission": "Automatic",
       "fuel": "Petrol",
       "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "wedding",
-        "corporate",
-        "vip",
-        "rough roads"
-      ],
-      "most_rented": false,
-      "alt": "Toyota Land Cruiser Prado 4x4 for executive and wedding travel"
+      "best_use": ["corporate", "wedding", "rough roads"],
+      "most_rented": true,
+      "alt": "Toyota Land Cruiser Prado 4x4 — popular for executive and rough-road travel"
     },
     {
-      "id": 16,
+      "id": 6,
       "brand": "Toyota",
       "name": "Fortuner",
-      "image": "assets/vehicles/land-cruiser.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
+      "image": "assets/vehicles/fortuner.jpg",
+      "image_source": "Wikimedia Commons — 'Toyota Fortuner (pre-facelift)' by Rileyfrom Christchurch, CC BY 2.0 (resized)",
       "category": "executive",
       "seats": 7,
       "transmission": "Automatic",
       "fuel": "Petrol",
       "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "corporate",
-        "wedding",
-        "rough roads"
-      ],
+      "best_use": ["corporate", "wedding", "rough roads"],
       "most_rented": false,
-      "alt": "Toyota Fortuner 4x4 for executive and group travel"
+      "alt": "Toyota Fortuner 4x4 for executive and group travel in Kumasi"
     },
     {
-      "id": 17,
+      "id": 7,
+      "brand": "Hyundai",
+      "name": "Tucson",
+      "image": "assets/vehicles/tucson.jpg",
+      "image_source": "Wikimedia Commons — '2018 Hyundai Tucson' by Vauxford, CC BY-SA 4.0 (resized)",
+      "category": "suv",
+      "seats": 5,
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": ["family", "corporate", "trips"],
+      "most_rented": true,
+      "alt": "Hyundai Tucson SUV — a common family and corporate rental in Ghana"
+    },
+    {
+      "id": 8,
+      "brand": "Kia",
+      "name": "Sportage",
+      "image": "assets/vehicles/sportage.jpg",
+      "image_source": "Wikimedia Commons — 'Kia Sportage (QL) Front' by Milhouse35, CC BY-SA 4.0 (resized)",
+      "category": "suv",
+      "seats": 5,
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": ["family", "corporate"],
+      "most_rented": false,
+      "alt": "Kia Sportage SUV for family and corporate rental in Kumasi"
+    },
+    {
+      "id": 9,
       "brand": "Toyota",
       "name": "Hiace",
-      "image": "assets/vehicles/suv-white.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
+      "image": "assets/vehicles/hiace.jpg",
+      "image_source": "Wikimedia Commons — 'Toyota Hiace 2.8 GL Grandia Tourer 2022' by Ethan Llamas, CC BY 4.0 (resized)",
       "category": "van",
       "seats": 14,
       "transmission": "Manual",
       "fuel": "Diesel",
       "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "tours",
-        "airport",
-        "group transport"
-      ],
+      "best_use": ["tours", "airport", "group transport"],
       "most_rented": false,
-      "alt": "Toyota Hiace passenger van for tours and airport groups"
+      "alt": "Toyota Hiace passenger van for group and airport transport in Kumasi"
     },
     {
-      "id": 18,
-      "brand": "Hyundai",
-      "name": "H1",
-      "image": "assets/vehicles/family-suv.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "van",
-      "seats": 12,
-      "transmission": "Automatic",
-      "fuel": "Diesel",
-      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "tours",
-        "corporate",
-        "group transport"
-      ],
-      "most_rented": false,
-      "alt": "Hyundai H1 passenger van for corporate and group travel"
-    },
-    {
-      "id": 19,
+      "id": 10,
       "brand": "Toyota",
       "name": "Coaster",
-      "image": "assets/vehicles/land-cruiser.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
+      "image": "assets/vehicles/coaster.jpg",
+      "image_source": "Wikimedia Commons — '2001-2007 Toyota Coaster bus 01' by OSX, released into the public domain (resized)",
       "category": "van",
       "seats": 20,
       "transmission": "Manual",
       "fuel": "Diesel",
       "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "tours",
-        "weddings",
-        "large groups"
-      ],
+      "best_use": ["tours", "weddings", "large groups"],
       "most_rented": false,
-      "alt": "Toyota Coaster bus for large tours and events"
-    },
-    {
-      "id": 20,
-      "brand": "Mercedes-Benz",
-      "name": "E-Class",
-      "image": "assets/vehicles/e-class.jpg",
-      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
-      "category": "executive",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
-      "best_use": [
-        "corporate",
-        "vip",
-        "wedding"
-      ],
-      "most_rented": false,
-      "alt": "Mercedes-Benz E-Class executive sedan for VIP travel"
+      "alt": "Toyota Coaster bus for large group and event transport in Kumasi"
     }
   ]
 }
