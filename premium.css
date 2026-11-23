@@ -344,3 +344,15 @@ button{font-family:inherit;cursor:pointer}
 .stat-number a:hover{color:var(--ghana-gold)}
 .review-actions{margin-top:26px}
 @media(max-width:680px){.stat-number a{font-size:15px}}
+
+/* ============ PHASE: hero car card beside text ============ */
+.hero-car-card{position:absolute;z-index:2;right:5%;top:50%;transform:translateY(-50%);width:min(38vw,470px);pointer-events:none}
+.hero-car-img{border:1px solid rgba(245,166,35,.55);padding:8px;background:rgba(11,31,58,.55);backdrop-filter:blur(10px);box-shadow:0 30px 80px rgba(0,0,0,.55);animation:heroCarFloat 8s ease-in-out infinite}
+.hero-car-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.98) contrast(1.04)}
+.hero-car-tag{margin-top:12px;display:inline-flex;flex-direction:column;gap:2px;background:rgba(11,31,58,.92);border:1px solid rgba(245,166,35,.5);border-left:4px solid var(--ghana-gold);padding:10px 16px;backdrop-filter:blur(10px)}
+.hero-car-tag span{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.2em;color:var(--ghana-gold)}
+.hero-car-tag strong{font-family:"Cormorant Garamond",Georgia,serif;font-size:18px;color:#fff;font-weight:600}
+@keyframes heroCarFloat{50%{transform:translateY(-12px)}}
+@media(max-width:980px){.hero-car-card{width:42vw;right:-2%;opacity:.85}}
+@media(max-width:680px){.hero-car-card{position:static;transform:none;width:100%;margin-top:26px;pointer-events:auto}.hero-car-img{animation:none}}
+@media(prefers-reduced-motion:reduce){.hero-car-img{animation:none}}
