@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="premium.css">
-    <script src="premium.js" defer></script>
+    <script src="premium.fixed.js" defer></script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Linkedinn Car Rental Service","description":"Car rental and leasing service in Kumasi, Ghana.","telephone":"+233242650673","address":{"@type":"PostalAddress","streetAddress":"Eastern By-pass, Airport Roundabout","addressLocality":"Kumasi","addressCountry":"GH"},"openingHours":"Mo-Su 00:00-23:59","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.3","reviewCount":"4"}}</script>
 </head>
 <body>
@@ -37,11 +37,14 @@
             </nav>
 
             <header class="hero-premium" id="home">
-                
-                
-                    
-                    
-                    <div class="stage-frame"><img src="assets/vehicles/hero.jpg" alt="Luxury sports vehicle" loading="eager" onerror="this.onerror=null;this.src='assets/vehicles/s-class.jpg'"></div>
+                <div class="hero-photo" aria-hidden="true"></div>
+                <div class="hero-shade" aria-hidden="true"></div>
+                <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+                <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+                <div class="hero-vehicle-stage" aria-hidden="true">
+                    <div class="stage-orbit orbit-one"></div>
+                    <div class="stage-orbit orbit-two"></div>
+                    <div class="stage-frame"><img src="assets/vehicles/hero.jpg" alt="Luxury vehicle" loading="eager" onerror="this.onerror=null;this.src='assets/vehicles/s-class.jpg'"></div>
                 </div>
                 <div class="hero-inner">
                     <div class="hero-bg"></div>
@@ -70,16 +73,15 @@
                     <div class="section-shell">
                         <div class="fleet-head fade-ready">
                             <div><span class="eyebrow">The Collection</span><h2 class="section-title">Curated Vehicles</h2></div>
-                            <div class="fleet-count" id="fleet-count">28 curated examples</div>
+                            <span class="fleet-count" id="fleet-count">Loading fleet...</span>
                         </div>
                         <div class="fleet-controls fade-ready">
                             <input class="search-input" id="vehicle-search" type="search" placeholder="Search make or model">
                             <select class="filter-select" id="brand-filter" aria-label="Filter by brand"><option>All</option><option>Toyota</option><option>Hyundai</option><option>Kia</option><option>Honda</option><option>Nissan</option><option>Mazda</option><option>Suzuki</option><option>Volkswagen</option><option>Ford</option><option>Chevrolet</option></select>
-                            <select class="filter-select" id="category-filter" aria-label="Filter by category"><option>All</option><option>Compact Sedan</option><option>Mid-size Sedan</option><option>Compact SUV</option><option>Mid-size SUV</option><option>Economy Hatchback</option></select>
+                            <select class="filter-select" id="category-filter" aria-label="Filter by category"><option>All</option><option>economy</option><option>sedan</option><option>suv</option><option>executive</option><option>van</option></select>
                             <select class="filter-select" id="seats-filter" aria-label="Filter by seats"><option value="All">All capacities</option><option value="4">4+ seats</option><option value="5">5+ seats</option><option value="7">7+ seats</option></select>
                         </div>
                         <div class="vehicle-grid" id="vehicle-grid"></div>
-                        <p class="inventory-note">Illustrative collection only: models shown have not been confirmed as available inventory. Rental prices and availability require direct confirmation.</p>
                     </div>
                 </section>
 

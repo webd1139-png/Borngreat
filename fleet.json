@@ -2,265 +2,380 @@
   "fleet": [
     {
       "id": 1,
-      "name": "Toyota Corolla",
-      "image": "assets/vehicles/toyota-corolla.jpg",
-{
-      "id": 7,
-      "name": "Hyundai Elantra",
-      "image": "assets/vehicles/hyundai-elantra.jpg",
+      "brand": "Toyota",
+      "name": "Corolla",
+      "image": "assets/vehicles/sedan-blue.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
+      "category": "economy",
+      "seats": 5,
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "airport",
+        "everyday",
+        "city"
+      ],
+      "most_rented": true,
+      "alt": "Toyota Corolla sedan suitable for airport and everyday travel"
+    },
+    {
+      "id": 2,
+      "brand": "Hyundai",
+      "name": "Accent",
+      "image": "assets/vehicles/hyundai.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
+      "category": "economy",
+      "seats": 5,
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "city",
+        "airport"
+      ],
+      "most_rented": true,
+      "alt": "Hyundai Accent compact sedan for city travel"
+    },
+    {
+      "id": 3,
+      "brand": "Kia",
+      "name": "Rio",
+      "image": "assets/vehicles/hatch-red.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
+      "category": "economy",
+      "seats": 5,
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "city",
+        "airport"
+      ],
+      "most_rented": true,
+      "alt": "Kia Rio hatchback for compact city use"
+    },
+    {
+      "id": 4,
+      "brand": "Toyota",
+      "name": "Yaris",
+      "image": "assets/vehicles/city-car.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
+      "category": "economy",
+      "seats": 5,
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "city",
+        "everyday"
+      ],
+      "most_rented": false,
+      "alt": "Toyota Yaris compact hatchback for economical travel"
+    },
+    {
+      "id": 5,
+      "brand": "Toyota",
+      "name": "Camry",
+      "image": "assets/vehicles/sedan-gray.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "sedan",
       "seats": 5,
       "transmission": "Automatic",
       "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "everyday",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "airport",
+        "corporate",
+        "everyday"
+      ],
+      "most_rented": true,
+      "alt": "Toyota Camry sedan for airport and corporate journeys"
+    },
+    {
+      "id": 6,
+      "brand": "Toyota",
+      "name": "Corolla Cross",
+      "image": "assets/vehicles/family-suv.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
+      "category": "suv",
+      "seats": 5,
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "family",
+        "trips",
+        "airport"
+      ],
       "most_rented": false,
-      "alt": "Hyundai Elantra sleek sedan - professional everyday driving"
+      "alt": "Toyota Corolla Cross compact SUV for family travel"
+    },
+    {
+      "id": 7,
+      "brand": "Hyundai",
+      "name": "Elantra",
+      "image": "assets/vehicles/economy-car.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
+      "category": "sedan",
+      "seats": 5,
+      "transmission": "Automatic",
+      "fuel": "Petrol",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "everyday",
+        "airport",
+        "corporate"
+      ],
+      "most_rented": false,
+      "alt": "Hyundai Elantra sedan for everyday and airport travel"
     },
     {
       "id": 8,
-      "name": "Honda Civic",
-      "image": "assets/vehicles/honda-civic.jpg",
+      "brand": "Honda",
+      "name": "Civic",
+      "image": "assets/vehicles/sedan-gray.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "sedan",
       "seats": 5,
       "transmission": "Automatic",
       "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "airport",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "airport",
+        "corporate",
+        "everyday"
+      ],
       "most_rented": false,
-      "alt": "Honda Civic reliable sedan - popular business transport"
+      "alt": "Honda Civic sedan for business and leisure journeys"
     },
     {
       "id": 9,
-      "name": "Nissan Sentra",
-      "image": "assets/vehicles/nissan-sentra.jpg",
+      "brand": "Nissan",
+      "name": "Sentra",
+      "image": "assets/vehicles/sedan-blue.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "sedan",
       "seats": 5,
       "transmission": "Automatic",
       "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "everyday",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "everyday",
+        "airport"
+      ],
       "most_rented": false,
-      "alt": "Nissan Sentra comfortable sedan - smooth city driving"
+      "alt": "Nissan Sentra sedan for comfortable city travel"
     },
     {
       "id": 10,
-      "name": "Toyota RAV4",
-      "image": "assets/vehicles/toyota-rav4.jpg",
+      "brand": "Toyota",
+      "name": "RAV4",
+      "image": "assets/vehicles/family-suv.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "suv",
       "seats": 5,
       "transmission": "Automatic",
       "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "family",
-      "most_rented": false,
-      "alt": "Toyota RAV4 midsize SUV - capable on rough roads"
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "family",
+        "trips",
+        "airport"
+      ],
+      "most_rented": true,
+      "alt": "Toyota RAV4 SUV for family and intercity trips"
     },
     {
       "id": 11,
-      "name": "Hyundai Tucson",
-      "image": "assets/vehicles/hyundai-tucson.jpg",
+      "brand": "Hyundai",
+      "name": "Tucson",
+      "image": "assets/vehicles/suv-white.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "suv",
       "seats": 5,
       "transmission": "Automatic",
       "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "family",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "family",
+        "trips",
+        "airport"
+      ],
       "most_rented": false,
-      "alt": "Hyundai Tucson comfortable SUV - family trips"
+      "alt": "Hyundai Tucson SUV for family journeys"
     },
     {
       "id": 12,
-      "name": "Kia Sportage",
-      "image": "assets/vehicles/kia-sportage.jpg",
+      "brand": "Kia",
+      "name": "Sportage",
+      "image": "assets/vehicles/suv-white.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "suv",
       "seats": 5,
       "transmission": "Automatic",
       "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "family",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "family",
+        "trips",
+        "corporate"
+      ],
       "most_rented": false,
-      "alt": "Kia Sportage stylish SUV - modern family vehicle"
+      "alt": "Kia Sportage SUV for family and corporate travel"
     },
     {
       "id": 13,
-      "name": "Honda CR-V",
-      "image": "assets/vehicles/honda-cr-v.jpg",
+      "brand": "Honda",
+      "name": "CR-V",
+      "image": "assets/vehicles/family-suv.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "suv",
       "seats": 5,
       "transmission": "Automatic",
       "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "trips",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "family",
+        "trips",
+        "corporate"
+      ],
       "most_rented": false,
-      "alt": "Honda CR-V spacious SUV - long journey comfort"
+      "alt": "Honda CR-V SUV for family and long-distance trips"
     },
     {
       "id": 14,
-      "name": "Toyota Highlander",
-      "image": "assets/vehicles/toyota-highlander.jpg",
+      "brand": "Toyota",
+      "name": "Highlander",
+      "image": "assets/vehicles/family-suv.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "suv",
       "seats": 7,
       "transmission": "Automatic",
       "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "family",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "family",
+        "tours",
+        "airport"
+      ],
       "most_rented": false,
-      "alt": "Toyota Highlander 7-seater SUV - family and group travel"
+      "alt": "Toyota Highlander 7-seat SUV for family and tour travel"
     },
     {
       "id": 15,
-      "name": "Toyota Land Cruiser Prado",
-      "image": "assets/vehicles/toyota-land-cruiser-prado.jpg",
+      "brand": "Toyota",
+      "name": "Land Cruiser Prado",
+      "image": "assets/vehicles/prado.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "executive",
       "seats": 7,
       "transmission": "Automatic",
       "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "wedding",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "wedding",
+        "corporate",
+        "vip",
+        "rough roads"
+      ],
       "most_rented": false,
-      "alt": "Toyota Land Cruiser Prado executive 4x4 - weddings and corporate"
+      "alt": "Toyota Land Cruiser Prado 4x4 for executive and wedding travel"
     },
     {
       "id": 16,
-      "name": "Toyota Fortuner",
-      "image": "assets/vehicles/toyota-fortuner.jpg",
+      "brand": "Toyota",
+      "name": "Fortuner",
+      "image": "assets/vehicles/land-cruiser.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "executive",
       "seats": 7,
       "transmission": "Automatic",
       "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "corporate",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "corporate",
+        "wedding",
+        "rough roads"
+      ],
       "most_rented": false,
-      "alt": "Toyota Fortuner rugged SUV - corporate and VIP travel"
+      "alt": "Toyota Fortuner 4x4 for executive and group travel"
     },
     {
       "id": 17,
-      "name": "Toyota Hiace",
-      "image": "assets/vehicles/toyota-hiace.jpg",
+      "brand": "Toyota",
+      "name": "Hiace",
+      "image": "assets/vehicles/suv-white.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "van",
       "seats": 14,
       "transmission": "Manual",
       "fuel": "Diesel",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "tours",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "tours",
+        "airport",
+        "group transport"
+      ],
       "most_rented": false,
-      "alt": "Toyota Hiace minibus - group tours and airport transfers"
+      "alt": "Toyota Hiace passenger van for tours and airport groups"
     },
     {
       "id": 18,
-      "name": "Hyundai H1",
-      "image": "assets/vehicles/hyundai-h1.jpg",
+      "brand": "Hyundai",
+      "name": "H1",
+      "image": "assets/vehicles/family-suv.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "van",
-      "seats": 15,
-      "transmission": "Manual",
+      "seats": 12,
+      "transmission": "Automatic",
       "fuel": "Diesel",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "tours",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "tours",
+        "corporate",
+        "group transport"
+      ],
       "most_rented": false,
-      "alt": "Hyundai H1 minibus - group tours and events"
+      "alt": "Hyundai H1 passenger van for corporate and group travel"
     },
     {
       "id": 19,
-      "name": "Toyota Coaster",
-      "image": "assets/vehicles/toyota-coaster.jpg",
+      "brand": "Toyota",
+      "name": "Coaster",
+      "image": "assets/vehicles/land-cruiser.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "van",
       "seats": 20,
       "transmission": "Manual",
       "fuel": "Diesel",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "tours",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "tours",
+        "weddings",
+        "large groups"
+      ],
       "most_rented": false,
-      "alt": "Toyota Coaster mid-size bus - large group transportation"
+      "alt": "Toyota Coaster bus for large tours and events"
     },
     {
       "id": 20,
-      "name": "Mercedes-Benz E-Class",
-      "image": "assets/vehicles/mercedes-e-class.jpg",
+      "brand": "Mercedes-Benz",
+      "name": "E-Class",
+      "image": "assets/vehicles/e-class.jpg",
+      "image_source": "Local project asset — replace with owner-supplied or royalty-free photo",
       "category": "executive",
       "seats": 5,
       "transmission": "Automatic",
       "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "corporate",
+      "typical_daily_price_range_ghs": "GHS 000–000 // ESTIMATE, owner to confirm",
+      "best_use": [
+        "corporate",
+        "vip",
+        "wedding"
+      ],
       "most_rented": false,
-      "alt": "Mercedes-Benz E-Class luxury sedan - executive and VIP clients"
-    }
-  ]
-}
-      "category": "economy",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "airport",
-      "most_rented": true,
-      "alt": "Toyota Corolla sedan - fuel-efficient economy car"
-    },
-    {
-      "id": 2,
-      "name": "Hyundai Accent",
-      "image": "assets/vehicles/hyundaaccent.jpg",
-      "category": "economy",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "city",
-      "most_rented": true,
-      "alt": "Hyundai Accent compact sedan - stylish city car"
-    },
-    {
-      "id": 3,
-      "name": "Kia Rio",
-      "image": "assets/vehicles/kia-rio.jpg",
-      "category": "economy",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "city",
-      "most_rented": true,
-      "alt": "Kia Rio hatchback - reliable economy car"
-    },
-    {
-      "id": 4,
-      "name": "Toyota Yaris",
-      "image": "assets/vehicles/toyota-yaris.jpg",
-      "category": "economy",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "city",
-      "most_rented": false,
-      "alt": "Toyota Yaris hatchback - compact and efficient"
-    },
-    {
-      "id": 5,
-      "name": "Toyota Camry",
-      "image": "assets/vehicles/toyota-camry.jpg",
-      "category": "sedan",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "airport",
-      "most_rented": false,
-      "alt": "Toyota Camry executive sedan - comfortable airport transfer"
-    },
-    {
-      "id": 6,
-      "name": "Toyota Corolla Cross",
-      "image": "assets/vehicles/toyota-corolla-cross.jpg",
-      "category": "sedan",
-      "seats": 5,
-      "transmission": "Automatic",
-      "fuel": "Petrol",
-      "price_per_day": "GHS 000 / day // ESTIMATE, owner to confirm",
-      "best_use": "family",
-      "most_rented": false,
-      "alt": "Toyota Corolla Cross compact SUV - versatile family car"
+      "alt": "Mercedes-Benz E-Class executive sedan for VIP travel"
     }
   ]
 }
